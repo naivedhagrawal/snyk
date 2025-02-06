@@ -13,7 +13,7 @@ RUN apk add --no-cache \
     && snyk --version
 
 # Set SNYK_TOKEN as an environment variable (optional, better to pass at runtime)
-# ENV SNYK_TOKEN=SNYK_TOKEN
+ENV SNYK_TOKEN=SNYK_TOKEN
 
 # Set working directory
 WORKDIR /app
